@@ -10,36 +10,10 @@
 			$(".mobile-navigation").slideToggle();
 		});
 
-		$(".testimonial-slider").flexslider({
+		$(".hero").flexslider({
 			directionNav: false,
-			controlNav: true,
+			controlNav: true
 		});
-
-		var map = $(".map");
-		var latitude = map.data("latitude");
-		var longitude = map.data("longitude");
-		if( map.length ){
-			
-			map.gmap3({
-				map:{
-					options:{
-						center: [latitude,longitude],
-						zoom: 15,
-						scrollwheel: false,
-					}
-				},
-				marker:{
-					latLng: [latitude,longitude],
-					options: {
-						icon: new google.maps.MarkerImage(
-							"images/map-pin.png",
-							new google.maps.Size(73, 95, "px", "px")
-						)
-					}
-				}
-			});
-			
-		}
 	});
 
 	$(window).load(function(){

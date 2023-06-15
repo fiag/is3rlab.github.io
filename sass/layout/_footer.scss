@@ -1,58 +1,56 @@
 /*
  * Footer Styles
  */
+
 .site-footer{
-	background-color: $secondary-color;
-	color: #9a9ca1;
+	background: $secondary-color;
 	padding: 50px 0;
-	@include em(14);
+	color: #acacb1;
 
-	.widget{margin-bottom: 30px}
-
-	.widget-title{
-		color: #caccd3;
-		@include rem(20);
-		font-weight: normal;
-	}
-
-	a{
-		color:#9a9ca1;
-
-		&:hover{color: $accent-color}
-	}
-
-	.dash-list{
-		list-style: none;
-		li{
-			position: relative;
-			padding: 5px 0 5px 20px;
-			&:before{
-				content:"-";
-				position: absolute;
-				left:0;
-				top:5px;
-			}
+	.widget{
+		margin-bottom: 30px;
+		.widget-title{
+			color: #dcc2a0;
+			@include em(18);
 		}
 	}
 }
 
-.social-links{
-	a{
-		width: 50px;
-		height: 50px;
-		border-radius: 50%;
-		display: inline-block;
-		background-color: #45474c;
-		color: white;
+ul.address{
+	list-style: none;
+	.fa{
+		width: 20px;
 		text-align: center;
-		@include em(20);
-		line-height: 2.6;
-		margin-right: 10px;
-		margin-bottom: 10px;
+		color: #dcc2a0;
+	}
+}
+ul.bullet{
+	list-style-image: url(images/bullet.png);
+	list-style-position: inside;
 
-		&:hover{
-			background-color: $accent-color;
-			color: white;
+	li{
+		padding: 10px 0;
+		border-bottom: 1px solid rgba(255,255,255,.1);
+
+		a{
+			color: #acacb1;
+
+			&:hover{color: $accent-color}
 		}
+	}
+}
+
+.contact-form{
+	input:not([type="submit"]),textarea{
+		margin-bottom: 20px;
+		width: 100%;
+		background: #292932;
+		padding: 15px;
+		color: #acacb1;
+		box-shadow: inset 0 2px 2px rgba(0,0,0,.2);
+
+	}
+	textarea{
+		min-height: 150px
 	}
 }

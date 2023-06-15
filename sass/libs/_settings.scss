@@ -1,14 +1,17 @@
 // Font family
-$primary-font      : "Montserrat", "Open Sans", sans-serif;
+$primary-font      : "Novecento Sans","Raleway", "Noto Sans" "Open Sans", sans-serif;
+$secondary-font    : arial,sans-serif;
 
 
 // Color Variables
-$accent-color      : #ed5151;
+$accent-color      : #8f7655;
 $primary-color     : $accent-color;
-$secondary-color   : #303236;
+$secondary-color   : #363641;
 
-$strong-color      : #6a5b5b;
-$body-color        : #927e7e;
+$strong-color      : #544531;
+$body-color        : #89837c;
+$muted-color       : #a59e95;
+$border-color: #e5e5e5;
 
 // Grid system
 $grid-columns      : 12 !default;
